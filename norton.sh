@@ -1,11 +1,11 @@
 #!/bin/bash
 
+# origin script by http://lqman.wordpress.com
 WORK=/home/udienz/antivirus
 BASE=/home/udienz/antivirus/symantec/
 PROSES=$BASE/inprogress/
 SIMPAN=$WORK/update/norton
 mkdir -p $PROSES
-#cd update/symantec/inprogress/
 LOCK=$SIMPAN/Archive-In-Progress-`hostname -f`
 TRACE=$SIMPAN/TIME.txt
 touch $LOCK
@@ -22,8 +22,5 @@ cd $SIMPAN
 wget -c -i $PROSES/address #> $LOGFILE
 touch $TRACE
 echo `date -u` > $TRACE
-#mkdir norton/
-#mv *.exe norton
 rm -rf $PROSES
 rm $LOCK
-#touch /mnt/website/update/symantec/

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 WORK=/home/udienz/antivirus
 BASE=$WORK/avira/
 PROSES=$BASE/inprogress/

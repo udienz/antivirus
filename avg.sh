@@ -1,4 +1,5 @@
 #!/bin/bash
+# Origin Script by http://lqman.wordpress.com
 
 WORK=/home/udienz/antivirus
 BASE=$WORK/avg7free/
@@ -26,14 +27,9 @@ do
 mkdir -p $SIMPAN
 cd $SIMPAN
 wget -c -i $PROSES/donlod3.html #> $LOGFILE
-#wget -c `head -n $i donlod3.html | tail -n 1`$magic -O `head -n $i namafile | tail -n 1`
 done
 
 rm $LOCK
 
 touch $TRACE
 echo `date -u` > $TRACE
-#rm -f /home/udienz/public_html/update/avg7free/*.*
-#mv  /home/udienz/public_html/update/avg7free/inprogress/*.bin /home/udienz/public_html/update/avg7free/
-#rm -rf /home/udienz/public_html/update/avg7free/inprogress
-#touch /home/udienz/public_html/update/avg7free/
